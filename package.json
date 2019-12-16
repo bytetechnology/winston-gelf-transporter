@@ -1,0 +1,41 @@
+{
+  "name": "winston-gelf-transporter",
+  "version": "1.0.0",
+  "description": "A Winston transporter for sending GELF messages",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytetechnology/winston-gelf-transporter.git"
+  },
+  "keywords": [
+    "gelf",
+    "winston",
+    "transport",
+    "tcp"
+  ],
+  "author": "David Sornberger <davids@bytetechnology.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bytetechnology/winston-gelf-transporter/issues"
+  },
+  "homepage": "https://github.com/bytetechnology/winston-gelf-transporter#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.14",
+    "@typescript-eslint/eslint-plugin": "2.10.0",
+    "@typescript-eslint/parser": "2.10.0",
+    "eslint": "6.7.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.9.0",
+    "ts-jest": "24.2.0",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.3"
+  }
+}
