@@ -20,7 +20,7 @@ import WinstonGelfTransporter from 'winston-gelf-transporter';
 
 CommonJS
 ```js
-var WinstonGelfTransporter = require('winston-gelf-transporter');
+const WinstonGelfTransporter = require('winston-gelf-transporter');
 ``` 
 
 ### Configuration 
