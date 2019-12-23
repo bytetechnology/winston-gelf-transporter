@@ -1,14 +1,4 @@
-type TransporterOptions = {
-    host: string,
-    port: string,
-    protocol?: string
-}
+import WinstonGelfTransporter from './WinstonGelfTransporter';
 
-class WinstonGelfTransporter {
-    private options: TransporterOptions;
-    constructor(options: TransporterOptions) {
-        this.options = options;
-    }
-}
-
+export { WinstonGelfTransporter };
 export default WinstonGelfTransporter;

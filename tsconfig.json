@@ -13,11 +13,13 @@
     "target": "es6",
     "baseUrl": "./",
     "rootDir": "src",
-    "outDir": "lib"
+    "outDir": "lib",
+    "declaration": true
   },  
   "exclude": [
     "node_modules",
-    "test"
+    "test",
+    "lib"
   ]
 }
 
