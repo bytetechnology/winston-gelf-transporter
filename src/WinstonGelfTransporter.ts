@@ -37,7 +37,7 @@ export default class WinstonGelfTransporter extends TransportStream {
 
   readonly gelfClient: any;
 
-  constructor(options: TransporterOptions) {
+  constructor(options?: TransporterOptions) {
     super(options);
     this.options = options;
     const logConfig = Object({ fields: {} });
@@ -127,11 +127,11 @@ export default class WinstonGelfTransporter extends TransportStream {
     this.gelfClient.message(
       message,
       this.getLogLevel(info.level),
-      next()
+      next
     );
   }
 
   close(): void {
-    this.gelfClient.message('Connection closed');
+    this.gelfClient.message('Connection closed', this.logLevels.info);
   }
 }

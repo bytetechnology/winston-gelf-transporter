@@ -7,7 +7,7 @@
   "scripts": {
     "prepublish": "npm run clean && npm run build",
     "build": "tsc",
-    "test": "jest",
+    "test": "npm run build && jest",
     "clean": "rm -rf coverage/* lib/*",
     "lint": "eslint src/**/*.ts",
     "start": "npm run build && node lib/index.js"
@@ -65,7 +65,7 @@
       "^.+\\.(ts|tsx)$": "ts-jest"
     },
     "testMatch": [
-      "**/*.spec.(ts|js)"
+      "<rootDir>/lib/**/*.spec.(ts|js)"
     ],
     "globals": {
       "ts-jest": {
