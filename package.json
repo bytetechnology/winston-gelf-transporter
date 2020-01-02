@@ -57,15 +57,10 @@
     "coverageDirectory": "<rootDir>/coverage",
     "testEnvironment": "node",
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
       "js"
     ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
     "testMatch": [
-      "<rootDir>/lib/**/*.spec.(ts|js)"
+      "<rootDir>/lib/**/*.spec.js"
     ],
     "globals": {
       "ts-jest": {
