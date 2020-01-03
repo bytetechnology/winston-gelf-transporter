@@ -1,8 +1,5 @@
-import winston from 'winston';
 import log from 'gelf-pro';
 import WinstonGelfTransporter from '../WinstonGelfTransporter';
-import Mock = jest.Mock;
-import SpyInstance = jest.SpyInstance;
 
 describe('WinstonGelfTransporter', () => {
   describe('getLogMessage', () => {
