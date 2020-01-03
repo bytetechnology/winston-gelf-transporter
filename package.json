@@ -4,6 +4,7 @@
   "description": "A Winston transporter for sending GELF messages",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "files": ["lib"],
   "scripts": {
     "prepublish": "npm run clean && npm run build",
     "build": "tsc",
