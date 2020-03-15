@@ -13,7 +13,12 @@
     "test": "npm run build && jest",
     "clean": "rm -rf coverage/* lib/*",
     "lint": "eslint src/**/*.ts",
-    "start": "npm run build && node lib/index.js"
+    "start": "npm run build && node lib/index.js",
+    "prepublishOnly": "npm test && npm run lint",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
