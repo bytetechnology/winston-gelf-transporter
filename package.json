@@ -13,6 +13,7 @@
     "test": "npm run build && jest",
     "clean": "rm -rf coverage/* lib/*",
     "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
     "start": "npm run build && node lib/index.js",
     "prepublishOnly": "npm test && npm run lint",
     "prepare": "npm run build",
